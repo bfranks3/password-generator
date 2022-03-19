@@ -12,10 +12,10 @@ function writePassword() {
 function generatePassword() {
   var passwordLength = window.prompt("Please choose a length for your password, minimum of 8 characters or maximum of 128 characters.")
   var includedCharacters = []
-  var lowercase = ["a", "b", "c"]
-  var uppercase = ["A", "B", "C"]
-  var numeric = ["1", "2", "3"]
-  var special = ["!", "@", "#"]
+  var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",]
+  var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",]
+  var numeric = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0",]
+  var special = ["!", "@", "#", "$", "%", "^", "*", "&"]
 
   if (passwordLength < 8 || passwordLength > 128) {
     return window.alert("Please pick a number between 8 and 128 characters.")
